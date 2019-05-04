@@ -1,1 +1,1 @@
-![](ScreenShots/1.png = 726x400)
+![](ScreenShots/1.png)
