@@ -95,4 +95,8 @@ extension ViewController: UITableViewDataSource {
         cell.detailTextLabel?.textColor = Identity.color(.textColor)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.animateCell()
+    }
 }

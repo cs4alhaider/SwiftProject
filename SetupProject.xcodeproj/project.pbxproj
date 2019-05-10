@@ -17,6 +17,7 @@
 		DD541693227E42D3004933F1 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD541692227E42D3004933F1 /* FontType.swift */; };
 		DD541696227E45F4004933F1 /* Error+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD541695227E45F4004933F1 /* Error+Model.swift */; };
 		DD541698227E47CD004933F1 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD541697227E47CD004933F1 /* UINavigationController+Extension.swift */; };
+		DD7F53692285123300A92074 /* UITableViewCell+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F53682285123300A92074 /* UITableViewCell+Extention.swift */; };
 		DD83C72D227E3F4E0095776D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83C72C227E3F4E0095776D /* AppDelegate.swift */; };
 		DD83C72F227E3F4E0095776D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83C72E227E3F4E0095776D /* ViewController.swift */; };
 		DD83C732227E3F4E0095776D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD83C730227E3F4E0095776D /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		DD541692227E42D3004933F1 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		DD541695227E45F4004933F1 /* Error+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Model.swift"; sourceTree = "<group>"; };
 		DD541697227E47CD004933F1 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		DD7F53682285123300A92074 /* UITableViewCell+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extention.swift"; sourceTree = "<group>"; };
 		DD83C729227E3F4E0095776D /* SetupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD83C72C227E3F4E0095776D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD83C72E227E3F4E0095776D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				DD83C74F227E3F5F0095776D /* UIView+Extention.swift */,
 				DD83C754227E3F5F0095776D /* UIViewAutoLayout+Extension.swift */,
 				DD541697227E47CD004933F1 /* UINavigationController+Extension.swift */,
+				DD7F53682285123300A92074 /* UITableViewCell+Extention.swift */,
 			);
 			path = "UIKit ";
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				DD83C76E227E3F5F0095776D /* Loader.swift in Sources */,
 				DD83C76A227E3F5F0095776D /* UIApplication+Extension.swift in Sources */,
 				DD54168A227E41A9004933F1 /* Identity.swift in Sources */,
+				DD7F53692285123300A92074 /* UITableViewCell+Extention.swift in Sources */,
 				DD83C767227E3F5F0095776D /* Api.swift in Sources */,
 				DD83C763227E3F5F0095776D /* Environment.swift in Sources */,
 				DD83C777227E3F5F0095776D /* None+Model.swift in Sources */,
