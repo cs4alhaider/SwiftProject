@@ -50,6 +50,10 @@
 		DD83C777227E3F5F0095776D /* None+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83C75C227E3F5F0095776D /* None+Model.swift */; };
 		DD83C778227E3F5F0095776D /* Posts+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83C75D227E3F5F0095776D /* Posts+Model.swift */; };
 		DD83C779227E3F5F0095776D /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83C75E227E3F5F0095776D /* Authenticator.swift */; };
+		DDDCF3CF228888C000AF9CE5 /* SearchTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDCF3CE228888C000AF9CE5 /* SearchTextField.xib */; };
+		DDDCF3D3228888E700AF9CE5 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCF3D2228888E700AF9CE5 /* SearchTextField.swift */; };
+		DDDCF3D522888DFF00AF9CE5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCF3D422888DFF00AF9CE5 /* TextField.swift */; };
+		DDDCF3D72288940F00AF9CE5 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCF3D62288940F00AF9CE5 /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,10 @@
 		DD83C75C227E3F5F0095776D /* None+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "None+Model.swift"; sourceTree = "<group>"; };
 		DD83C75D227E3F5F0095776D /* Posts+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Posts+Model.swift"; sourceTree = "<group>"; };
 		DD83C75E227E3F5F0095776D /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		DDDCF3CE228888C000AF9CE5 /* SearchTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTextField.xib; sourceTree = "<group>"; };
+		DDDCF3D2228888E700AF9CE5 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		DDDCF3D422888DFF00AF9CE5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		DDDCF3D62288940F00AF9CE5 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 				DD83C754227E3F5F0095776D /* UIViewAutoLayout+Extension.swift */,
 				DD541697227E47CD004933F1 /* UINavigationController+Extension.swift */,
 				DD7F53682285123300A92074 /* UITableViewCell+Extention.swift */,
+				DDDCF3D62288940F00AF9CE5 /* UITextField+Extension.swift */,
 			);
 			path = "UIKit ";
 			sourceTree = "<group>";
@@ -158,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				DD541681227E40C0004933F1 /* UIView */,
+				DDDCF3CE228888C000AF9CE5 /* SearchTextField.xib */,
+				DDDCF3D2228888E700AF9CE5 /* SearchTextField.swift */,
+				DDDCF3D422888DFF00AF9CE5 /* TextField.swift */,
 			);
 			path = "Custom UI Classes";
 			sourceTree = "<group>";
@@ -390,6 +402,7 @@
 				DD83C737227E3F4F0095776D /* LaunchScreen.storyboard in Resources */,
 				DD83C734227E3F4F0095776D /* Assets.xcassets in Resources */,
 				DD83C732227E3F4E0095776D /* Main.storyboard in Resources */,
+				DDDCF3CF228888C000AF9CE5 /* SearchTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,17 +469,20 @@
 				DD83C775227E3F5F0095776D /* PreintHelper.swift in Sources */,
 				DD83C76F227E3F5F0095776D /* String+Extension.swift in Sources */,
 				DD83C76C227E3F5F0095776D /* UIView+Extention.swift in Sources */,
+				DDDCF3D72288940F00AF9CE5 /* UITextField+Extension.swift in Sources */,
 				DD541685227E40FF004933F1 /* DeviceHelper.swift in Sources */,
 				DD83C76B227E3F5F0095776D /* UIViewController+Extention.swift in Sources */,
 				DD83C769227E3F5F0095776D /* Endpoint.swift in Sources */,
 				DD83C776227E3F5F0095776D /* User+Model.swift in Sources */,
 				DD83C778227E3F5F0095776D /* Posts+Model.swift in Sources */,
 				DD83C72F227E3F4E0095776D /* ViewController.swift in Sources */,
+				DDDCF3D3228888E700AF9CE5 /* SearchTextField.swift in Sources */,
 				DD541696227E45F4004933F1 /* Error+Model.swift in Sources */,
 				DD83C774227E3F5F0095776D /* Keys+UserDefaults.swift in Sources */,
 				DD54168F227E4273004933F1 /* ColorType.swift in Sources */,
 				DD541687227E4123004933F1 /* Helper.swift in Sources */,
 				DD83C771227E3F5F0095776D /* UIViewAutoLayout+Extension.swift in Sources */,
+				DDDCF3D522888DFF00AF9CE5 /* TextField.swift in Sources */,
 				DD83C766227E3F5F0095776D /* ResponseStatus.swift in Sources */,
 				DD541698227E47CD004933F1 /* UINavigationController+Extension.swift in Sources */,
 				DD83C76E227E3F5F0095776D /* Loader.swift in Sources */,

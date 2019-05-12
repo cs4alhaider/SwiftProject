@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchTextField" customModule="SetupProject" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="Qwq-KJ-C7h" id="USe-Ba-eg3"/>
+                <outlet property="textField" destination="kwO-cv-21D" id="Ygz-Yt-iwG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xb9-DD-XgP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-qL-VhL">
+                            <rect key="frame" x="10" y="10" width="396" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search ..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-cv-21D" customClass="TextField" customModule="SetupProject" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
+                                    <color key="backgroundColor" white="0.84184272299999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="didBeginEditing:" destination="-1" eventType="editingDidBegin" id="utR-Au-foy"/>
+                                        <action selector="didEndEditing:" destination="-1" eventType="editingDidEnd" id="tQh-JG-Q8V"/>
+                                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="b8N-qp-iXk"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwq-KJ-C7h">
+                                    <rect key="frame" x="336" y="0.0" width="60" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="mBD-W9-gKB"/>
+                                    </constraints>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="i0J-fb-Re1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.082354657351970673" green="0.082349784672260284" blue="0.082353092730045319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YgU-qL-VhL" secondAttribute="trailing" constant="8" id="FVo-XF-bFh"/>
+                        <constraint firstItem="YgU-qL-VhL" firstAttribute="top" secondItem="xb9-DD-XgP" secondAttribute="top" constant="10" id="s59-6N-mWZ"/>
+                        <constraint firstItem="YgU-qL-VhL" firstAttribute="leading" secondItem="xb9-DD-XgP" secondAttribute="leading" constant="10" id="zLI-wL-LgL"/>
+                        <constraint firstAttribute="bottom" secondItem="YgU-qL-VhL" secondAttribute="bottom" constant="10" id="zbM-ui-3To"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xb9-DD-XgP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="REO-Jj-e9Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xb9-DD-XgP" secondAttribute="trailing" id="Vr9-62-NCo"/>
+                <constraint firstItem="xb9-DD-XgP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="d0f-dW-O8m"/>
+                <constraint firstAttribute="bottom" secondItem="xb9-DD-XgP" secondAttribute="bottom" id="zQY-2i-jFN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-123.88392857142857"/>
+        </view>
+    </objects>
+</document>

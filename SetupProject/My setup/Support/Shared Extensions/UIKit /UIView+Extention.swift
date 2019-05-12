@@ -71,4 +71,68 @@ extension UIView {
             }
         }
     }
+    
+    // -------------------------------------------------------------------------- //
+    
+    /// Adding array of views to the subView
+    ///
+    /// - Parameter views: UIView | UIButton | UIImageView and all other UIKit elements
+    ///
+    /// - Author: Abdullah Alhaider.
+    func addSubviews(_ views: UIView...) {
+        views.forEach { addSubview($0) }
+    }
+    
+    /// Adding round corners to a UIView | UIButton | UIImageView and all other UIKit elements
+    ///
+    /// - Parameters:
+    ///   - corners: .topLeft | .topRight | .bottomLeft | .bottomRight
+    ///   - radius: corner radius
+    ///
+    /// - Author: Abdullah Alhaider
+    func roundCorners(corners: UIRectCorner = .allCorners, radius: CGFloat) {
+        if #available(iOS 11.0, *) {
+            layer.cornerRadius = radius
+            guard !corners.contains(.allCorners) else { return }
+            layer.maskedCorners = []
+            if corners.contains(.topLeft) {
+                layer.maskedCorners.insert(.layerMaxXMinYCorner)
+            }
+            if corners.contains(.topRight) {
+                layer.maskedCorners.insert(.layerMinXMinYCorner)
+            }
+            if corners.contains(.bottomLeft) {
+                layer.maskedCorners.insert(.layerMinXMaxYCorner)
+            }
+            if corners.contains(.bottomRight) {
+                layer.maskedCorners.insert(.layerMaxXMaxYCorner)
+            }
+        } else {
+            let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+            let mask = CAShapeLayer()
+            mask.path = path.cgPath
+            layer.mask = mask
+        }
+    }
+    
+    /// Helper method for addSubviewFromNib() to load the nib file into UIView subclass
+    ///
+    /// - Author: Abdullah Alhaider.
+    private func viewFromNibForClass() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView
+        return view ?? UIView()
+    }
+    
+    /// Adding the nib file with UIView class
+    ///
+    /// - Author: Abdullah Alhaider.
+    func addSubviewFromNib() {
+        let view = viewFromNibForClass()
+        view.frame = bounds
+        // autolayout
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(view)
+    }
 }
